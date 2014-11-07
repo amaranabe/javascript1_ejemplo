@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+/*Este es un código ejemplo para conocer la sintaxis Javascript. Vemos que la sintaxis para los comentarios es idéntica a la de Java.*/
+<title>Ejemplo de Javascript</title>
+</head>
+<body>
+
+<p>Creamos variables de varios tipos y las mostramos</p>
+
+<p id="demo"></p>
+
+<script>
+var numpi = 3.1416; //Declaramos una variable tipo numero y le asignamos un valor
+var curso = "Desarrollo Aplicaciones Web"; //Declaramos una variable tipo string y le asignamos un valor
+var respuesta = 'Si soy yo!'; //Es otro string
+
+/*A continuación, utilizamos el siguiente Metodo para acceder a un elemento de Html, y se usa la propiedad innerHTML para referirnos al contenido del elemento. 
+Por ejemplo, ahora nos estamos refiriendo al elemento variable curso.
+Y entre comentarios tenemos puesto la expresión para referirnos a otra variable.
+*/
+//document.getElementById("demo").innerHTML = pi;
+document.getElementById("demo").innerHTML = curso;
+//document.getElementById("demo").innerHTML = answer;
+
+</script>
+
+/*Como crear instrucciones*/
+<p>Instrucciones</p>
+<p id="myPar">Soy un parrafo</p>
+<div id="myDiv">Soy una pregunta</div>
+
+<p>
+<button type="button" onclick="myFunction()">Haz click</button>
+</p>
+
+<script>
+function myFunction() {
+    document.getElementById("myPar").innerHTML = "Hello Mundo";
+    document.getElementById("myDiv").innerHTML = "Cómo estáis?";
+}
+</script>
+
+<p>Cuando hagas click en "Haz click", Los dos elementos cambiarán</p>
+
+</body>
+</html>
+
+
